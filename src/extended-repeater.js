@@ -1,6 +1,6 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
-module.exports = function repeater(str, options) {
+function repeater(str, options) {
   let separator = '+';
   if (options.separator !== undefined) separator = options.separator
   
@@ -43,10 +43,6 @@ module.exports = function repeater(str, options) {
  * => 'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'
  *
  */
-function repeater(/* str, options */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
-}
 
 module.exports = {
   repeater
