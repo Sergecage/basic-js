@@ -1,6 +1,7 @@
-const CustomError = require("../extensions/custom-error");
+const { NotImplementedError } = require('../extensions/index.js');
 
-module.exports = function countCats(matrix) {
+
+function countCats(matrix) {
   let arr = []
   let allSearch = matrix.toString().split(",")
 for (let i = 0; i < allSearch.length; i++) {
@@ -13,4 +14,22 @@ if(!arr.length){
 }else{
   return arr.length
 }
+}
+
+/**
+ * Given matrix where you have to find cats by ears "^^"
+ *
+ * @param {Array<Array>} matrix 
+ * @return {Number} count of cats found
+ *
+ * @example
+ * countCats([
+ *  [0, 1, '^^'],
+ *  [0, '^^', 2],
+ *  ['^^', 1, 2]
+ * ]) => 3`
+ *
+ */
+module.exports = {
+  countCats
 };
