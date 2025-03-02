@@ -1,7 +1,7 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 
-module.exports = function createDreamTeam(members) {
+function createDreamTeam(members) {
   let dreamTeam = []
   let coolName = []
   
@@ -36,10 +36,6 @@ module.exports = function createDreamTeam(members) {
  * createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]) => 'LOO'
  *
  */
-function createDreamTeam(/* members */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
-}
 
 module.exports = {
   createDreamTeam
